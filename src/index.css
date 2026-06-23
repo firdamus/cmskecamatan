@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reset baseline defaults */
+html, body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Keep sidebar elements clean and consistent */
+.sidebar-font {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Consistent Data Table Style Rules (13-14 px) */
+table, thead, tbody, tr, th, td {
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+}
+
+@media (min-width: 768px) {
+  table, thead, tbody, tr, th, td {
+    font-size: 14px !important;
+  }
+}
